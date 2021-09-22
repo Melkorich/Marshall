@@ -1,0 +1,157 @@
+.header {
+  background-color: #c6c6c6;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+
+  &__top {
+    @include flexb();
+    position: relative;
+    z-index: 9;
+    padding: 35px 0;
+
+  }
+}
+
+.menu__btn {
+  display: block;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 50px;
+  height: 26px;
+  position: relative;
+  padding: 0;
+  z-index: 9;
+
+  span {
+    position: absolute;
+    background-color:#EDEDED;
+    width: 50px;
+    height: 3px;
+    bottom: 4px;
+    right: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 41px;
+      height: 3px;
+      top: -10px;
+      right: 0;
+      background-color:#EDEDED;
+    }
+  }
+}
+
+.menu__btn--active {
+  transition: transform 0.3s;
+  span {
+    background-color: #303030;
+    width: 32px;
+    height: 3px;
+    transform: rotate(-45deg);
+    left: 10px;
+    top: 12px;
+    transition: transform 0.3s;
+   
+
+    &::before {
+      transform: rotate(90deg);
+      background-color: #303030;
+      width: 32px;
+      height: 3px;
+      top: 0px;
+    }
+  }
+}
+
+.menu {
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 150px 10px 150px;
+  width: 442px;
+  height: 100vh;
+  background: rgba(230, 230, 230, 0.71);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 8;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  overflow: auto;
+
+  &__item {
+    margin-bottom: 27px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    background-color: transparent;
+    box-shadow: transparent;
+    outline: transparent;
+  }
+
+  &__link:hover {
+    -webkit-box-shadow: -5px -5px 15px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: -5px -5px 15px 0px rgba(0,0,0,0.51);
+    box-shadow: -5px -5px 15px 0px rgba(0,0,0,0.51);
+  }
+
+  &__link:last-child {
+    padding-bottom: 0;
+  }
+
+  &__social {
+    display: inline-block;
+    margin-right: 16px;
+  }
+
+  &__social:last-child {
+    margin-right: 0;
+  }
+
+  &__social--instagram:hover {
+    path {
+      fill: #c13584;
+    }
+  }
+  
+
+  &__social--spotify:hover {
+    path {
+      fill:#086616;
+    }
+  }
+
+  &__social--pinterest:hover {
+    path {
+      fill:#bd0520;
+    }
+  }
+
+  &__social--facebook:hover {
+    path {
+      fill:#3b5998;
+    }
+  }
+}
+
+.menu--active {
+  transform: translateX(0%);
+}
+
+
+
+
+

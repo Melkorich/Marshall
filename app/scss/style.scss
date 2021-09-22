@@ -1,12 +1,12 @@
 @import 'fonts';
 @import 'vars';
-@import 'media'; 
 @import 'mixin';
 @import 'reset';
 @import 'libs';
 @import 'global';
+@import 'media'; 
  
 
 /* general */
-// @import "components/header";
+@import "components/header";
 // @import "components/footer";
