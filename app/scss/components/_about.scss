@@ -1,22 +1,38 @@
 .about {
   padding: 90px 0 50px;
 
+  &__inner {
+    position: relative;
+  } 
+
   &__image {
     float: left;
     margin-right: 65px;
+    max-width: 645px;
+    height: 554px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__items {
     display: flex;
     flex-direction: column;
     align-items:flex-end;
+    margin-bottom: 105px;
   }
 
   &__item {
     color: #ededed;
     margin-bottom: 76px;
-    max-width: 570px;
+    max-width: 510px;
     width: 100%;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
   }
 
   &__item:nth-child(2) {
@@ -49,3 +65,226 @@
     position: relative;
   }
 } 
+
+.about-slider {
+  position: relative;
+  max-width: 918px;
+  
+  
+  &__card {
+    width: 100%;
+    height: 396px;
+    background-color: #2D2D2D;
+    border-radius: 25px;
+    padding: 62px 40px;
+    color: #ededed;
+  }
+
+  &__wrap {
+    max-width: 602px;
+  }
+
+  &__title {
+    font-size: 45px;
+    line-height: 1.2;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    max-width: 602px;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  &__info {
+    display: flex;
+    margin-left: -40px;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  .item-link {
+    color: #ededed;
+    display: inline-block;
+    font-size: 26px;
+    transition: opacity 0.1s, color 0.3s;
+    width: 124px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/about/about-arrow.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 144px;
+      height: 7px;
+      bottom: -3px;
+      left: 0;
+    }
+
+    &:focus {
+      color: #929292;
+    }
+
+    &:hover {
+      color: #929292;
+      &::before {
+        left: 5px;
+      }
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  .item-price {
+    background-color: #1f1f1f;
+    padding: 10px 44px 9px 93px;
+    max-width: 227px;
+    font-size: 26px;
+    margin-right: 0;
+  }
+
+  .item-color,
+  .item-available {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 26px;
+  }
+
+  .item-color {
+    margin: 0 20px;
+  }
+
+  .item-available {
+   
+    margin-right: auto;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 70px;
+    z-index: 5;
+  }
+
+  .about-slider__left {
+    margin-top: 20px;
+    padding: 10px 30px 9px;
+  }
+
+  .about-slider__btn {
+    background-color: #1f1f1f;
+    color: #ededed;
+    font-size: 26px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 10px 40px 9px;
+    outline:  none;
+    border: transparent;
+
+    &.slick-disabled {
+      background-color: #ededed;
+      color: #1f1f1f;
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    right: -180px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+
+    li {
+      font-size: 0;
+      line-height: 0;
+      padding: 12px 0;
+    }
+
+    button {
+      width: 15px;
+      height: 15px;
+      padding: 0;
+      margin: 0;
+      border-radius: 50%;
+      background-color: #fff;
+      outline: transparent;
+      border: 1px solid transparent;
+
+      &:focus {
+        border: 1px solid #2d2d2d;
+      }
+
+      &:hover {
+        background-color: #000;
+      }
+
+      &:active {
+        background-color: #663C2A;
+      }
+    }
+  }
+
+  .slick-active button {
+    background-color: #663C2A;
+  }
+  
+ 
+}
+
+.about-subslider {
+  max-width: 389px;
+  width: 100%;
+  height: 365px;
+  z-index: 15;
+  position: absolute;
+  bottom: -125px;
+  right: 90px;
+
+  &__item {
+    // width: 76%;
+  }
+
+  &__box {
+    padding: 0;
+    margin: 0;
+  }
+
+
+  &__img {
+    width: 100%;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 70%;
+    z-index: 9;
+    cursor: pointer;
+    transition: stroke 0.3s;
+
+    &:hover {
+      path{
+        stroke: #fff;
+      }
+    }
+  }
+
+  .arrow-left {
+    left: 0px;
+  }
+
+  .arrow-right {
+    right: 0px;
+  }
+}

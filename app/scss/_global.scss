@@ -26,9 +26,9 @@ body {
   background-color: #1F1F1F;
 }
 
-.body--active {
-  overflow: hidden;
-}
+// .body--active {
+//   overflow: hidden;
+// }
 // font-family: 'Fjalla One', sans-serif;
  
 .main {
@@ -39,4 +39,60 @@ body {
   max-width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.item-price {
+  max-width: 123px;
+  background-color: #303030;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ededed;
+  padding: 4px 34px 3px 34px;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 400;
+  margin-right: 34px;
+  @include line-climp(1);
+}
+
+.item-link {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+  color:#303030;
+  transition: opacity 0.1s, color 0.3s;
+
+  &:focus {
+    color: #929292;
+  }
+
+  &:hover {
+    color: #929292;
+
+    &::before {
+      left: 5px;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/header/arrow-right.svg');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 8px;
+    bottom: -3px;
+    left: 0;
+    transition: left 0.3s;
+  }
+
+  &::before path {
+    fill:#303030;
+  }
 }
