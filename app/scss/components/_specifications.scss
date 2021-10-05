@@ -1,0 +1,46 @@
+.specifications {
+  padding: 90px 0 90px;
+
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 5;
+  }
+
+  &__image {
+    position: relative;
+    z-index: 4;
+
+    img {
+      object-fit: cover;
+      position: relative;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      right: 0;
+
+    }
+  }
+
+  &__image::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 873px;
+    height: 873px;
+    background-image: url('../images/specification/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+  }
+}

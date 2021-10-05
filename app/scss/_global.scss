@@ -41,6 +41,16 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  text-transform: uppercase;
+  font-size: 55px;
+  line-height: 1.2;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 400;
+  color: #EDEDED;
+  text-align: center;
+}
+
 .item-price {
   max-width: 123px;
   background-color: #303030;

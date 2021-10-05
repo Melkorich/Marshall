@@ -19,7 +19,8 @@
   }
 
   &--scroll {
-    background: rgba(158, 158, 158, 0.7);
+    // background: rgba(158, 158, 158, 0.7);
+    background: rgba(180, 180, 180, 0.7);
     backdrop-filter: blur(4px);
   }
 
@@ -169,14 +170,14 @@
       opacity: 0.3;
     }
   }
-}
+}  
 
 .swiper-horizontal>.swiper-scrollbar {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 68px;
-  z-index: 18;
+  z-index: 24;
   height: 3px;
   width: 180px;
 }
