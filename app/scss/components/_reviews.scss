@@ -1,0 +1,141 @@
+.reviews {
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__inner {
+    display: flex;
+  } 
+
+  &__rating {
+    margin-bottom: 40px;
+  }
+
+  &__rating-title {
+    font-size: 21px;
+    color: #EDEDED;
+    margin-bottom: 24px;
+  }
+
+  .star {
+    margin-right: 30px;
+    margin-bottom: 15px;
+    padding: 0;
+
+    .jq-ry-normal-group svg {
+      fill:#1F1F1F;
+      stroke:#EDEDED;
+      stroke-width:20;
+    }
+
+    .jq-ry-rated-group svg {
+      fill:#EDEDED;
+      stroke:#EDEDED;
+      stroke-width:20;
+    }
+  }
+
+  .star:last-child {
+    margin-bottom: 0;
+  }
+
+  &__rating--box {
+    display: flex;
+  }
+
+  &__rating-num {
+    display: inline-block;
+    color: #EDEDED;
+    font-size: 21px;
+    line-height: 1.2;
+  }
+
+  &__write {
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #EDEDED;
+    margin-bottom: 15px;
+  }
+
+  &__score {
+    text-transform: uppercase;
+    color: #EDEDED;
+    font-size: 23px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .score {
+    padding: 18px 0 0 0;
+    .jq-ry-normal-group svg {
+      fill:#1F1F1F;
+      stroke:#EDEDED;
+      stroke-width:20;
+    }
+
+    .jq-ry-rated-group svg {
+      fill:#EDEDED;
+      stroke:#EDEDED;
+      stroke-width:20;
+    }
+  }
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__textarea {
+    display: block;
+    border-radius: 25px;
+    resize: none;
+    height: 115px;
+    width: 271px;
+    margin-top: 15px;
+    padding: 6px 10px;
+    outline: none;
+    font-size: 20px;
+    border:transparent;
+    background-color: #ededed;
+  }
+
+  &__label {
+    text-transform: uppercase;
+    color: #EDEDED;
+    font-size: 23px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  &__input {
+    display: block;
+    width: 271px;
+    height: 42px;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    outline: none;
+    border:transparent;
+    margin-top: 15px;
+    background-color: #ededed;
+  }
+
+  &__btn {
+    border-radius: 25px;
+    background-color: #929292;
+    padding: 7px 49px;
+    color: #ededed;
+    font-size: 17px;
+    line-height: 1.2;
+    display: block;
+    outline: none;
+    border: transparent;
+    margin-top: 13px;
+    cursor: pointer;
+  }
+}

@@ -3,9 +3,8 @@
 
 
   &__inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-bottom: 200px;
+    position: relative;
   }
 
   &__title {
@@ -17,22 +16,21 @@
   &__image {
     position: relative;
     z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     img {
       object-fit: cover;
       position: relative;
       z-index: 5;
-      top: 0;
-      left: 0;
-      right: 0;
-
     }
   }
 
   &__image::before {
     content: '';
     position: absolute;
-    top: 50%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 873px;
@@ -43,4 +41,187 @@
     background-size: cover;
     z-index: 0;
   }
+
+  &__list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 500px;
+  }
+
+  &__subtitle {
+    font-size: 28px;
+    line-height: 1.2;
+    color: #ededed;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+
+  &__descr {
+    color: #929292;
+    font-style: 20px;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .specifications__list-left{
+
+    .specifications__item:first-child {
+      top: 108px;
+      left: 6px;
+      max-width: 530px;
+    }
+
+    .specifications__item:first-child .specifications__subtitle::before,
+    .specifications__item:nth-child(2) .specifications__subtitle::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-image: url('../images/specification/line-1.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 530px;
+      height: 36px;
+    }
+
+    .specifications__item:nth-child(2) {
+      top: 204px;
+      left: 50px;
+      max-width: 530px;
+    }
+  }
+
+  .specifications__list-right {
+    text-align: right;
+      
+    .specifications__item:first-child .specifications__subtitle::before,
+    .specifications__item:nth-child(2) .specifications__subtitle::before,
+    .specifications__item:nth-child(3) .specifications__subtitle::before{
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -34px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .specifications__item:first-child .specifications__subtitle::before{
+      background-image:url('../images/specification/line-3.svg');
+      width: 425px;
+      height: 37px;
+    }
+
+    .specifications__item:nth-child(2) .specifications__subtitle::before{
+      background-image:url('../images/specification/line-4.svg');
+      width: 481px;
+      height: 37px;
+    }
+
+    .specifications__item:nth-child(3) .specifications__subtitle::before{
+      background-image:url('../images/specification/line-5.svg');
+      width: 440px;
+      height: 37px;
+      bottom: 0;
+    }
+
+    .specifications__item:first-child{
+      right: 170px;
+      max-width: 425px;
+    }
+
+    .specifications__item:nth-child(2){
+      top: 80px;
+      right: 0;
+      max-width: 480px;
+    }
+
+    .specifications__item:nth-child(3){
+      right: 100px;
+      bottom: -155px;
+      max-width: 441px;
+     }
+    
+  }
+
+  &__item:nth-child(4) .specifications__subtitle::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -33px;
+    background-image: url('../images/specification/line-4.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 481px;
+    height: 37px;
+  }
+
+  &__item:nth-child(5) .specifications__subtitle::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/specification/line-5.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 440px;
+    height: 37px;
+  }
 }
+
+.gallary {
+  padding-top: 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    max-width: 386px;
+    width: 100%;
+    height: 386px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #ededed;
+    width: 100%;
+    text-align: center;
+  }
+} 

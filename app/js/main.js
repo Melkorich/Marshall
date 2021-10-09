@@ -61,6 +61,18 @@ $(function(){
   //   return false;
   // });
 
+  $(".star").rateYo({
+    starWidth: "24px",
+    spacing: "15px",
+    readOnly: true,
+  });
+
+  $(".score").rateYo({
+    starWidth: "24px",
+    spacing: "15px",
+    fullStar: true,
+  });
+
   
   
 
