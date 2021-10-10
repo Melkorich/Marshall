@@ -1,8 +1,6 @@
 .header {
   background-color: #c6c6c6;
   position: relative;
-  // overflow: hidden;
-  // min-height: 100vh;
 
   .logo {
     position: relative;
@@ -28,9 +26,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    position: relative;
+    // position: relative;
     padding: 35px 0;
-    z-index: 23;
+    // z-index: 23;
   }
 
   .header--scroll .header__top-inner {
@@ -43,7 +41,6 @@
   }
 
   &__content {
-    // padding-top: 84px;
     padding-top: 193px;
   }
 
@@ -69,6 +66,7 @@
     color: #303030;
     margin-bottom: 10px;
     text-transform: uppercase;
+    @include line-climp(2);
   }
 
   &__swiper-image {
@@ -176,7 +174,7 @@
     left: 50%;
     transform: translateX(-50%);
     top: 68px;
-    z-index: 24;
+    z-index: 22;
     height: 3px;
     width: 180px;
   }
@@ -216,59 +214,6 @@
 //   overflow: hidden;
 // }
 
-.button-menu {
-  display: block;
-  border: none;
-  background-color: transparent;
-  outline: none;
-  width: 50px;
-  height: 26px;
-  top: 5px;
-  position: relative;
-  padding: 0;
-  z-index: 25;
-
-  span {
-    position: absolute;
-    background-color:#EDEDED;
-    width: 50px;
-    height: 3px;
-    bottom: 4px;
-    right: 0;
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 41px;
-      height: 3px;
-      top: -10px;
-      right: 0;
-      background-color:#EDEDED;
-    }
-  }
-}
-
-.button-menu--active {
-  transition: transform 0.3s;
-  span {
-    background-color: #303030;
-    width: 32px;
-    height: 3px;
-    transform: rotate(-45deg);
-    left: 9px;
-    top: 12px;
-    transition: transform 0.3s;
-   
-    &::before {
-      transform: rotate(90deg);
-      background-color: #303030;
-      width: 32px;
-      height: 3px;
-      top: 0px;
-    }
-  }
-}
-
 .menu {
   position: fixed;
   top: 0;
@@ -278,7 +223,7 @@
   height: 100vh;
   background: rgba(230, 230, 230, 0.71);
   backdrop-filter: blur(4px);
-  z-index: 20;
+  z-index: 21;
   transform: translateX(150%);
   transition: transform 0.3s;
   overflow: auto;
@@ -384,6 +329,60 @@
 .menu--active {
   transform: translateX(0%);
 }
+
+.button-menu {
+  display: block;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 50px;
+  height: 26px;
+  top: 5px;
+  position: relative;
+  padding: 0;
+  z-index: 22;
+
+  span {
+    position: absolute;
+    background-color:#EDEDED;
+    width: 50px;
+    height: 3px;
+    bottom: 4px;
+    right: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 41px;
+      height: 3px;
+      top: -10px;
+      right: 0;
+      background-color:#EDEDED;
+    }
+  }
+}
+
+.button-menu--active {
+  transition: transform 0.3s;
+  span {
+    background-color: #303030;
+    width: 32px;
+    height: 3px;
+    transform: rotate(-45deg);
+    left: 9px;
+    top: 12px;
+    transition: transform 0.3s;
+   
+    &::before {
+      transform: rotate(90deg);
+      background-color: #303030;
+      width: 32px;
+      height: 3px;
+      top: 0px;
+    }
+  }
+}
+
 
 // .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
 //   width: 180px;

@@ -86,9 +86,9 @@ $(function(){
 new Swiper('.header__swiper', {
   // loop: true,
   slidesPerView: 1,
-  autoplay: {
-    delay: 5000,
-  }, 
+  // autoplay: {
+  //   delay: 5000,
+  // }, 
 
   effect: 'fade',
   fadeEffect: {
@@ -115,9 +115,9 @@ new Swiper('.swiper', {
   slidesPerScroll: 1,
   direction: 'vertical',
   spaceBetween: 40,
-  autoplay: {
-    delay: 4500,
-  }, 
+  // autoplay: {
+  //   delay: 4500,
+  // }, 
 
   // pagination: {
   //   el: '.swiper-pagination',

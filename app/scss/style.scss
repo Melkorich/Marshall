@@ -4,8 +4,7 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
-@import 'media'; 
- 
+
 
 /* general */
 @import "components/header";
@@ -15,3 +14,6 @@
 @import "components/specifications";
 @import "components/reviews";
 @import "components/footer";
+
+
+@import 'media'; 
