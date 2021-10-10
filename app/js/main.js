@@ -19,6 +19,14 @@ $(function(){
     infinite: false,
   });
 
+  // $('.reviews-slider').slick({
+  //   arrows: false,
+  //   dots: true,
+  //   vertical: true,
+  //   slidesToShow: 2,
+  //   slidesToScroll: 1,
+  // });
+
   $(window).scroll(function(){
     if ($(document).scrollTop() > 150) {
       $(".header__top").addClass("header--scroll");
@@ -73,12 +81,9 @@ $(function(){
     fullStar: true,
   });
 
-  
-  
-
 }); 
 
-const swiper = new Swiper('.header__swiper', {
+new Swiper('.header__swiper', {
   // loop: true,
   slidesPerView: 1,
   autoplay: {
@@ -102,3 +107,33 @@ const swiper = new Swiper('.header__swiper', {
     dragSize: 60,
   },
 });
+
+new Swiper('.swiper', {
+  // loop: true,
+  // lopedSlides: 0,
+  slidesPerView: 2,
+  slidesPerScroll: 1,
+  direction: 'vertical',
+  spaceBetween: 40,
+  autoplay: {
+    delay: 4500,
+  }, 
+
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   type: 'progressbar',
+  // },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+    dragSize: 60,
+  },
+
+  mousewheel: {
+    sensitivity: 1,
+    // eventsTarget: '.swiper'
+  }
+
+});
+

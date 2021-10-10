@@ -170,27 +170,28 @@
       opacity: 0.3;
     }
   }
+
+  .swiper-horizontal>.swiper-scrollbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 68px;
+    z-index: 24;
+    height: 3px;
+    width: 180px;
+  }
+  
+  .swiper-scrollbar {
+    background: #B5B5B5;
+    cursor: pointer;
+  }
+  
+  .swiper-scrollbar-drag {
+    background: #fff;
+    cursor: pointer;
+  }
 }  
 
-.swiper-horizontal>.swiper-scrollbar {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 68px;
-  z-index: 24;
-  height: 3px;
-  width: 180px;
-}
-
-.swiper-scrollbar {
-  background: #B5B5B5;
-  cursor: pointer;
-}
-
-.swiper-scrollbar-drag {
-  background: #fff;
-  cursor: pointer;
-}
 
 .overlay {
   position: fixed;
@@ -307,7 +308,7 @@
 
   &__link:last-child {
     padding-bottom: 0;
-  }
+  } 
 
   &__link:focus {
     color: #ededed;
