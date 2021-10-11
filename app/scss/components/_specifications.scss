@@ -71,7 +71,7 @@
 
   &__descr {
     color: #929292;
-    font-style: 20px;
+    font-size: 20px;
     max-width: 400px;
     width: 100%;
   }
@@ -98,7 +98,7 @@
     }
 
     .specifications__item:nth-child(2) {
-      top: 204px;
+      top: 230px;
       left: 50px;
       max-width: 530px;
     }
@@ -203,10 +203,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
   }
 
   &__img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -225,3 +227,41 @@
     text-align: center;
   }
 } 
+
+.specifications__hidden {
+  display: none;
+}
+
+.specifications-tabs {
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 0 20px 20px;
+    color: #929292;
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+  }
+
+  &__item--active {
+    color: #ededed;
+  }
+
+  &__content-item {
+    color: #ededed;
+    font-size: 22px;
+    display: none;
+
+    &.specifications-tabs__content-item--active {
+      display: block;
+    }
+  }
+}

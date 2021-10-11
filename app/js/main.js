@@ -8,6 +8,16 @@ $(function(){
     infinite: false,
     fade: true,
     dots: true,
+
+    responsive: [
+      {
+        breakpoint: 821,
+        settings: {
+          arrows: false,
+        }
+      },
+    ]
+  
   });
 
   $('.about-subslider').slick({
@@ -17,6 +27,17 @@ $(function(){
     asNavFor: '.about-slider',
     fade: true,
     infinite: false,
+  });
+
+
+  $('.specifications-tabs__item').on('click', function(e) {
+    e.preventDefault();
+    $('.specifications-tabs__item').removeClass('specifications-tabs__item--active');
+    $(this).addClass('specifications-tabs__item--active');
+
+    $('.specifications-tabs__content-item').removeClass('specifications-tabs__content-item--active');
+    $($(this).attr('href')).addClass('specifications-tabs__content-item--active');
+    
   });
 
   // $('.reviews-slider').slick({

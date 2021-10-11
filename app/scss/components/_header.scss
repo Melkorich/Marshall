@@ -14,6 +14,7 @@
     width: 100%;
     z-index: 22;
     transition: background 0.3s;
+    overflow: hidden;
   }
 
   &--scroll {
@@ -35,7 +36,7 @@
     padding: 25px 0;
     transition: all 0.3s;
   }
-
+ 
   &__bottom {
     margin-bottom: 90px;
   }
@@ -167,7 +168,7 @@
     &:active {
       opacity: 0.3;
     }
-  }
+  } 
 
   .swiper-horizontal>.swiper-scrollbar {
     position: absolute;
