@@ -232,6 +232,25 @@
     flex-direction: column-reverse;
   }
 
+  .reviews-swiper.swiper-vertical>.swiper-scrollbar {
+    display: none;
+  }
+
+  .swiper {
+    max-width: 600px;
+    width: 100%;
+    height: 810px;
+    padding: 50px 0 0 0px;
+  }
+
+  .footer__top {
+    flex-wrap: wrap;
+  }
+
+  .footer__items {
+    margin: 0 30px 30px 0;
+  }
+
 }
 
 @media (max-width: 800px) {
@@ -327,10 +346,6 @@
     margin-bottom: 25px;
   }
 
-  .benefits__item::before {
-
-  }
-
   .benefits__item-title {
     font-size: 30px;
   }
@@ -338,8 +353,60 @@
   .benefits__text {
     font-size: 20px;
   }
-}
 
+  .reviews__title {
+    margin-bottom: 30px;
+  }
+
+  .swiper {
+    height: 500px;
+  }
+
+  .swiper .reviews-slider__content {
+    padding: 18px;
+  }
+
+  .swiper .reviews-slider__name {
+    font-size: 18px;
+  }
+
+  .swiper .reviews-slider__text {
+    font-size: 16px;
+  }
+
+  .reviews .star .jq-ry-rated-group svg {
+    width: 15px; 
+    height: 15px;
+    margin-left: 8px !important;
+  }
+
+  .reviews .star .jq-ry-normal-group svg {
+    width: 15px; 
+    height: 15px;
+    margin-left: 8px !important;
+  }
+
+  .swiper .reviews-slider__image {
+    min-width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+
+  .reviews__rating {
+    padding-top: 50px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .footer__logo {
+    margin: 25px 0;
+  }
+}
 
 
 @media (max-width: 510px) {
@@ -391,6 +458,10 @@
   .about-slider .item-available  {
     font-size: 18px;
   }
+
+  .footer__item {
+    padding-bottom: 5px;
+  }
 }
 
 
@@ -441,6 +512,11 @@
     font-size: 26px;
   }
 
+  .reviews__content {
+    max-width: 440px;
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 425px) {
@@ -488,5 +564,25 @@
     height: 300px;
     margin: 10px 0;
   }
+
+  .swiper .reviews-slider__wrapper {
+    display: block;
+  }
+
+  .swiper .reviews-slider__content {
+    position: relative;
+  }
+
+  .swiper .reviews-slider__image {
+    width: 60px;
+    height: 60px;
+    margin-right: 0;
+    position: absolute;
+    right: 3px;
+    top: 33px;
+    z-index: 5;
+  }
+
+
 
 }

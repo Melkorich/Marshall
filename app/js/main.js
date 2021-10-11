@@ -116,12 +116,6 @@ new Swiper('.header__swiper', {
     crossFade: true
   },
 
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   type: 'progressbar',
-  // },
-
-  
   scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true,
@@ -130,8 +124,6 @@ new Swiper('.header__swiper', {
 });
 
 new Swiper('.swiper', {
-  // loop: true,
-  // lopedSlides: 0,
   slidesPerView: 2,
   slidesPerScroll: 1,
   direction: 'vertical',
@@ -139,11 +131,6 @@ new Swiper('.swiper', {
   // autoplay: {
   //   delay: 4500,
   // }, 
-
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   type: 'progressbar',
-  // },
 
   scrollbar: {
     el: '.swiper-scrollbar',
@@ -153,7 +140,16 @@ new Swiper('.swiper', {
 
   mousewheel: {
     sensitivity: 1,
-    // eventsTarget: '.swiper'
+  },
+
+  breakpoints: {
+    320: {
+      mousewheel: false,
+    },
+
+    980: {
+      mousewheel: true,
+    },
   }
 
 });
