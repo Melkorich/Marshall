@@ -334,6 +334,11 @@
 
 @media (max-width: 680px) {
 
+  .menu {
+    width: 400px;
+    padding: 150px 70px 150px;
+  }
+
   .title {
     font-size: 45px;
   }
@@ -466,6 +471,12 @@
 
 
 @media (max-width: 480px) {
+
+  .menu {
+    width: 315px;
+    padding: 150px 30px 150px 70px;
+  
+  }
   .header__title {
     font-size: 50px;
   }
@@ -476,11 +487,6 @@
 
   .header__bottom {
     padding-top: 40px;
-  }
-
-  .menu {
-    width: 100%;
-    padding: 150px 20px 150px;
   }
 
   .about__image {
@@ -520,6 +526,11 @@
 }
 
 @media (max-width: 425px) {
+
+  .menu {
+    width: 250px;
+    padding: 150px 15px 150px;
+  }
   .header__bottom {
     padding-top: 60px;
   }
