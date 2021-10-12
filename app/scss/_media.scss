@@ -239,8 +239,12 @@
   .swiper {
     max-width: 600px;
     width: 100%;
-    height: 810px;
+    height: 700px;
     padding: 50px 0 0 0px;
+  }
+
+  .swipe-hidden {
+    display: block;
   }
 
   .footer__top {
@@ -359,12 +363,8 @@
     font-size: 20px;
   }
 
-  .reviews__title {
-    margin-bottom: 30px;
-  }
-
   .swiper {
-    height: 500px;
+    height: 450px;
   }
 
   .swiper .reviews-slider__content {
@@ -592,6 +592,14 @@
     right: 3px;
     top: 33px;
     z-index: 5;
+  }
+
+  .specifications {
+    padding: 90px 0 50px;
+  }
+
+  .reviews__title {
+    margin-bottom: 80px;
   }
 
 

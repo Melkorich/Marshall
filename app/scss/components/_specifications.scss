@@ -239,6 +239,7 @@
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+    border-bottom: 1px solid #929292;
   }
 
   &__item {
@@ -253,6 +254,10 @@
 
   &__item--active {
     color: #ededed;
+  }
+
+  &__content {
+    padding-top: 20px;
   }
 
   &__content-item {
