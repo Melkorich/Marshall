@@ -17,8 +17,6 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -26,11 +24,12 @@ body {
   background-color: #1F1F1F;
 }
 
-// .body--active {
-//   overflow: hidden;
-// }
-// font-family: 'Fjalla One', sans-serif;
- 
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
 .main {
   flex-grow: 1;
 }

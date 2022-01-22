@@ -29,7 +29,7 @@ function styles(){
     .pipe(dest('app/css'))
     .pipe(browserSync.stream())
 }
-
+ 
 function scripts(){
   return src([
     'node_modules/jquery/dist/jquery.js',

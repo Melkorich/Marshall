@@ -192,7 +192,6 @@
     align-items: center;
     position: relative;
     z-index: 5;
-    flex-wrap: wrap;
   }
  
   &__image {
@@ -203,8 +202,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-  }
+    margin: 0 10px;
+  } 
 
   &__img {
     width: 100%;
@@ -224,6 +223,7 @@
     line-height: 1.2;
     color: #ededed;
     width: 100%;
+    padding: 0 5px;
     text-align: center;
   }
 } 
