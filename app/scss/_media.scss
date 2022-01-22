@@ -505,6 +505,10 @@
     display: none;
   }
 
+  .about__items {
+   margin-bottom: 50px;
+  }
+
   .about-slider__descr {
     margin-bottom: 10px;
     display: inline-block;
@@ -512,6 +516,11 @@
 
   .about-slider .slick-dots {
     top: 80%;
+  }
+
+  .benefits,
+  .specifications {
+    padding: 40px 0 50px;
   }
 
   .benefits__item {
@@ -538,6 +547,10 @@
   .gallary__image {
     margin: 10px 0;
     height: 250px;
+  }
+
+  .specifications__inner {
+    padding-bottom: 50px;
   }
 
 }
@@ -587,11 +600,6 @@
   .benefits__title {
     margin-bottom: 60px;
   }
-
-  // .gallary__image {
-  //   height: 300px;
-  //   margin: 10px 0;
-  // }
 
   .swiper .reviews-slider__wrapper {
     display: block;

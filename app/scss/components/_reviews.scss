@@ -133,25 +133,27 @@
   }
 
   &__upload {
-    text-transform: uppercase;
-    color: #EDEDED;
-    font-size: 23px;
-    line-height: 1.2;
     margin-bottom: 35px;
+
+    span {
+      border-radius: 25px;
+      background-color: #929292;
+      padding: 7px 49px;
+      color: #ededed;
+      font-size: 17px;
+      line-height: 1.2;
+      display: block;
+      max-width: 156px;
+      outline: none;
+      margin-top: 13px;
+      cursor: pointer;
+      text-transform: initial;
+    }
+    
   }
 
-  .form__btn {
-    border-radius: 25px;
-    background-color: #929292;
-    padding: 7px 49px;
-    color: #ededed;
-    font-size: 17px;
-    line-height: 1.2;
-    display: block;
-    outline: none;
-    border: transparent;
-    margin-top: 13px;
-    cursor: pointer;
+  input[type="file"] {
+    display: none;
   }
 
   .post__btn {
