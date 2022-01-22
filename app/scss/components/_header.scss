@@ -18,18 +18,13 @@
   }
 
   &--scroll {
-    // background: rgba(158, 158, 158, 0.7);
     background: rgba(180, 180, 180, 0.7);
     backdrop-filter: blur(4px);
   }
 
   &__top-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    // position: relative;
+    @include flexb();
     padding: 35px 0;
-    // z-index: 23;
   }
 
   .header--scroll .header__top-inner {
@@ -193,7 +188,6 @@
   }
 }  
 
-
 .overlay {
   position: fixed;
   left: 0;
@@ -288,36 +282,21 @@
     }
   }
 
-  &__social--spotify:focus {
-    path {
-      fill:#086616;
-    }
-  }
-  
+  &__social--spotify:focus,
   &__social--spotify:hover {
     path {
       fill:#086616;
     }
   }
 
-  &__social--pinterest:focus {
+  &__social--pinterest:focus,
+  &__social--pinterest:hover  {
     path {
       fill:#bd0520;
     }
   }
 
-  &__social--pinterest:hover {
-    path {
-      fill:#bd0520;
-    }
-  }
-
-  &__social--facebook:focus {
-    path {
-      fill:#3b5998;
-    }
-  }
-
+  &__social--facebook:focus,
   &__social--facebook:hover {
     path {
       fill:#3b5998;
@@ -381,16 +360,3 @@
     }
   }
 }
-
-
-// .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
-//   width: 180px;
-//   height: 3px;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   top: 68px;
-// }
-
-// .swiper-pagination-progressbar-fill {
-//   background-color: #fff;
-// }

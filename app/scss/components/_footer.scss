@@ -2,9 +2,7 @@
   background-color: #1A1A1A;
 
   &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexb();
     padding: 36px 0;
   }
 
@@ -32,9 +30,7 @@
   }
 
   &__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexb();
     padding: 35px 0;
   }
 

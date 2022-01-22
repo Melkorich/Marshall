@@ -68,22 +68,15 @@ $(function(){
     $('.button-menu').removeClass('button-menu--active');
   });
 
- 
 
-  // $("a[href^='#']").click(function(){
-  //   var _href = $(this).attr("href");
-  //   $("html, body").animate({scrollTop: $(_href).offset().top-89}, 1000);
-  //   return false;
-  // });
-
-    $(".menu__link, .header__link").on("click", function (e) {
-      e.preventDefault();
-      var id = $(this).attr('href'),
-          top = $(id).offset().top-89;
-      $('body,html').animate({
-          scrollTop: top
-      }, 1500);
-    });
+  $(".menu__link, .header__link").on("click", function (e) {
+    e.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top-89;
+    $('body,html').animate({
+        scrollTop: top
+    }, 1500);
+  });
 
   $(window).scroll(function(){
     if ($(document).scrollTop() > 150) {
@@ -108,16 +101,12 @@ $(function(){
 }); 
 
 new Swiper('.header__swiper', {
-  // loop: true,
   slidesPerView: 1,
-  // autoplay: {
-  //   delay: 5000,
-  // },  
 
   effect: 'fade',
   fadeEffect: {
     crossFade: true
-  },
+  }, 
 
   scrollbar: {
     el: '.swiper-scrollbar',
@@ -131,9 +120,6 @@ new Swiper('.swiper', {
   slidesPerScroll: 1,
   direction: 'vertical',
   spaceBetween: 40,
-  // autoplay: {
-  //   delay: 4500,
-  // }, 
 
   scrollbar: {
     el: '.swiper-scrollbar',

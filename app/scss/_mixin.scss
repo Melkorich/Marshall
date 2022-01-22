@@ -10,6 +10,9 @@
   align-items: center;
 }
 
+// @include flexb();
+// @include flexc();
+
 @mixin line-climp($row) {
   overflow: hidden; 
   text-overflow: ellipsis;
